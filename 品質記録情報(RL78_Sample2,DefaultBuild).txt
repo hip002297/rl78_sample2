@@ -1,61 +1,13 @@
 品質記録情報
-2024年6月13日 14:08:35
+2024年6月14日 13:34:40
 
 ------ ビルド開始(RL78_Sample2, DefaultBuild) ------
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\main.c src\common.c src\timer.c src\int.c src\port.c src\watchdogtimer.c src\system.c src\systeminit.c src\panel.c src\digitalio.c src\counter.c src\74hc.c -cpu=S3 -obj_path=DefaultBuild "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F1058A.DVF" -g -g_line -Osize -I include -c -msg_lang=japanese
-W0511186:CC-RL V1のオプション"-Osize"の評価期間は残り59日です。評価期間経過後は、暗黙に"-Olite"指定に変更されます。引き続き"-Osize"を利用したい場合は製品の購入をご検討ください。
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\cstart.asm src\opt_byte.asm -cpu=S3 -obj_path=DefaultBuild "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F1058A.DVF" -g -c -msg_lang=japanese
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\rlink.exe -subcommand=DefaultBuild\RL78_Sample2.clnk
-W0561018:The evaluation period of CC-RL V1 is valid for the remaining 59 days. After that, functional limit will be applied. Please consider purchasing the product.
-W0561018:The evaluation period of CC-RL V1 is valid for the remaining 59 days. After that, functional limit will be applied. Please consider purchasing the product.
-Renesas Optimizing Linker Completed
------- ビルド終了(エラー:0個, 警告:3個)(RL78_Sample2, DefaultBuild) ------
-
---- CommandFile 1 ---
-DefaultBuild\RL78_Sample2.clnk :
--Input=DefaultBuild\main.obj
--Input=DefaultBuild\common.obj
--Input=DefaultBuild\timer.obj
--Input=DefaultBuild\int.obj
--Input=DefaultBuild\port.obj
--Input=DefaultBuild\watchdogtimer.obj
--Input=DefaultBuild\system.obj
--Input=DefaultBuild\systeminit.obj
--Input=DefaultBuild\panel.obj
--Input=DefaultBuild\digitalio.obj
--Input=DefaultBuild\counter.obj
--Input=DefaultBuild\74hc.obj
--Input=DefaultBuild\cstart.obj
--Input=DefaultBuild\opt_byte.obj
--SECURITY_ID=00000000000000000000
--DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F1058A.DVF
--DEBug
--NOCOmpress
--NOOPtimize
--OUtput=DefaultBuild\RL78_Sample2.abs
--LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\lib\rl78em4s.lib
--LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\lib\malloc_n.lib
--LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\lib\rl78em4r.lib
--DEBUG_MONITOR
--LISt=DefaultBuild\RL78_Sample2.map
--AUTO_SECTION_LAYOUT
--ROm=.data=.dataR
--ROm=.sdata=.sdataR
--NOMessage
--MEMory=High
--NOLOgo
--end
--Input=DefaultBuild\RL78_Sample2.abs
--DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F1058A.DVF
--OUtput=DefaultBuild\RL78_Sample2.hex
--FOrm=Hexadecimal
--NOMessage
--exit
+------ ビルド終了(エラー:0個, 警告:0個)(RL78_Sample2, DefaultBuild) ------
 
 
 --- SHA1 hash value of output files ---
-C:\Users\a_horiuchi\Documents\技術研修\CS+\RL78_Sample2\DefaultBuild\RL78_Sample2.abs: df0ca49dd5007082dbabdc6f1754fda6ee210fc7
-C:\Users\a_horiuchi\Documents\技術研修\CS+\RL78_Sample2\DefaultBuild\RL78_Sample2.hex: 3ade221772cea4997d456ba98de2a3e428db7c6b
+C:\Users\a_horiuchi\Documents\技術研修\CS+\RL78_Sample2\DefaultBuild\RL78_Sample2.abs: d023797795909ce486193818d7b235149e3d2dea
+C:\Users\a_horiuchi\Documents\技術研修\CS+\RL78_Sample2\DefaultBuild\RL78_Sample2.hex: 658fc2c62d00a44f948be6201f05bb4f3ba60c1f
 
 
 --- システム情報 ---
@@ -81,13 +33,13 @@ C:\Users\a_horiuchi\Documents\技術研修\CS+\RL78_Sample2\DefaultBuild\RL78_Sa
  C:\Program Files (x86)\Renesas Electronics\CS+\CC
 *メモリ使用量
  *プライベート・ワーキング・セット
-  210 MB
+  378 MB
  *GDIオブジェクト数
-  1959
+  2449
  *USERオブジェクト数
-  1114
+  1592
  *開いているファイル
-  0 editors, 0 files, 0 KB
+  8 editors, 8 files, 46 KB
 
 --- ビルド・ツール・プラグイン情報 ---
 RH850ビルド・ツールCC-RH用プラグイン
@@ -243,11 +195,16 @@ C:\Users\a_horiuchi\Documents\技術研修\CS+\RL78_Sample2\RL78_Sample2.mtpj
   
  * SMS Assemblerのバージョン
    V1.00.00.01 [29 May 2020]
+ * GREEN_DSP Structured Assembler のバージョン
+   V1.04.02
  
 
 デバッグ・ツール情報
  *RL78 シミュレータ
   Debugger Library V8.11.00.03 [21 Nov 2023]
+  RL78 Simulator V5.09.00.02 [31 Oct 2023]
+  Simulator ChipFile [R5F1058A] V1.06.00.01
+  RL78_G11 Simulator V2.09.00.02 [31 Oct 2023]
   
 
 その他のツール情報
