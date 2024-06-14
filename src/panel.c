@@ -64,8 +64,8 @@ ST_DTC_DATA __near dtc_controldata[24];
 	UCHAR F0918 = 0;
 	UCHAR F0919 = 0;
 	UCHAR F0920 = 0;
-	UCHAR DNEXT = 0;
-	UCHAR PNUM  = 0;
+	// UCHAR DNEXT = 0;
+	// UCHAR PNUM  = 0;
 	UCHAR F1321 = 0;
 
 /*----------------------------*/
@@ -80,7 +80,7 @@ void panel_init0(void)
 
 void panel(void)
 {
-	UCHAR num;
+	// UCHAR num;
 	
 	DGIN_INIT;
 	BCNT_INIT;
@@ -89,7 +89,7 @@ void panel(void)
 	DGIN_PROC( I_18,0, LOW,0,fTrg10ms);
 	BCNT_PROC( 9,fOFF,fOFF,I_18,F0617,F0618,F0619,F0620);
 	IC74HC4511_PROC( fOFF,fON,fON,F0617,F0618,F0619,F0620,F0914,F0915,F0916,F0917,F0918,F0919,F0920 );
-	
+	/*
 	if(I_18 == 1){
 		F1321 = DNEXT & 0x01;
 		
@@ -100,7 +100,7 @@ void panel(void)
 		}
 		PNUM = num;
 	}
-	
+	*/
 	DGOUT_PROC( 30, F0914, HIGH );
 	DGOUT_PROC( 31, F0915, HIGH );
 	DGOUT_PROC( 32, F0916, HIGH );
@@ -108,6 +108,6 @@ void panel(void)
 	DGOUT_PROC( 51, F0918, HIGH );
 	DGOUT_PROC( 52, F0919, HIGH );
 	DGOUT_PROC( 53, F0920, HIGH );
-	DGOUT_PROC( 54, F1321, HIGH );
+	DGOUT_PROC( 54, fOFF, HIGH );
 	
 }
