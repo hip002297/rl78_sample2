@@ -1,13 +1,13 @@
 品質記録情報
-2024年6月14日 13:34:40
+2024年6月14日 14:41:33
 
 ------ ビルド開始(RL78_Sample2, DefaultBuild) ------
 ------ ビルド終了(エラー:0個, 警告:0個)(RL78_Sample2, DefaultBuild) ------
 
 
 --- SHA1 hash value of output files ---
-C:\Users\a_horiuchi\Documents\技術研修\CS+\RL78_Sample2\DefaultBuild\RL78_Sample2.abs: d023797795909ce486193818d7b235149e3d2dea
-C:\Users\a_horiuchi\Documents\技術研修\CS+\RL78_Sample2\DefaultBuild\RL78_Sample2.hex: 658fc2c62d00a44f948be6201f05bb4f3ba60c1f
+C:\Users\a_horiuchi\Documents\技術研修\CS+\RL78_Sample2\DefaultBuild\RL78_Sample2.abs: 25bd272f1a11c28e221a111e4bbbf9686cb53b86
+C:\Users\a_horiuchi\Documents\技術研修\CS+\RL78_Sample2\DefaultBuild\RL78_Sample2.hex: 68762dd2dd6e95acb17d017d9c5e290e5515d538
 
 
 --- システム情報 ---
@@ -33,13 +33,13 @@ C:\Users\a_horiuchi\Documents\技術研修\CS+\RL78_Sample2\DefaultBuild\RL78_Sa
  C:\Program Files (x86)\Renesas Electronics\CS+\CC
 *メモリ使用量
  *プライベート・ワーキング・セット
-  378 MB
+  342 MB
  *GDIオブジェクト数
-  2449
+  2387
  *USERオブジェクト数
-  1592
+  1322
  *開いているファイル
-  8 editors, 8 files, 46 KB
+  10 editors, 10 files, 84 KB
 
 --- ビルド・ツール・プラグイン情報 ---
 RH850ビルド・ツールCC-RH用プラグイン

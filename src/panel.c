@@ -65,6 +65,7 @@ ST_DTC_DATA __near dtc_controldata[24];
 	UCHAR F0919 = 0;
 	UCHAR F0920 = 0;
 	UCHAR DNEXT = 0;
+	UCHAR PNUM  = 0;
 	UCHAR F1321 = 0;
 
 /*----------------------------*/
@@ -79,7 +80,7 @@ void panel_init0(void)
 
 void panel(void)
 {
-	volatile UCHAR num;
+	UCHAR num;
 	
 	DGIN_INIT;
 	BCNT_INIT;
@@ -89,13 +90,15 @@ void panel(void)
 	BCNT_PROC( 9,fOFF,fOFF,I_18,F0617,F0618,F0619,F0620);
 	IC74HC4511_PROC( fOFF,fON,fON,F0617,F0618,F0619,F0620,F0914,F0915,F0916,F0917,F0918,F0919,F0920 );
 	
-	if((I_18 == 1) && (DNEXT == 0x01)){
-		F1321 = 0x01;
-	}
-	
-	num = (F0617 | (F0618 << 1) | (F0619 << 2) | (F0620 << 3)) ;
-	if(num == 0x09){
-		DNEXT = 0x01;
+	if(I_18 == 1){
+		F1321 = DNEXT & 0x01;
+		
+		num = (F0617 | (F0618 << 1) | (F0619 << 2) | (F0620 << 3));
+		
+		if((num == 0x09) && (num != PNUM)){
+			DNEXT = (~DNEXT) & 0x01;
+		}
+		PNUM = num;
 	}
 	
 	DGOUT_PROC( 30, F0914, HIGH );
